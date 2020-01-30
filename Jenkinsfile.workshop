@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('Build JAR') {
       steps {
-        git url: 'http://gogs-ocp-workshop.apps.cluster-scl-1f24.scl-1f24.example.opentlc.com/userXY/nationalparks'
+        git url: 'http://gogs-ocp-workshop.apps.cluster-scl-1f24.scl-1f24.example.opentlc.com/user9/nationalparks'
         sh "cp .settings.xml ~/.m2/settings.xml"
         sh "mvn package"
       }
